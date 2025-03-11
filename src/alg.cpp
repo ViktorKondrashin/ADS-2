@@ -1,9 +1,9 @@
- // Copyright 2022 NNTU-CS
+// Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
 
 
-double pown(double value, int n) {
+double pown(double value, uint16_t n) {
   double rez = 1.0;
   for (int i = 0; i < n; ++i) {
     rez *= value;
@@ -19,7 +19,7 @@ uint64_t fact(uint16_t n) {
   return rez;
 }
 
-double calc_item(double x, uint16_t n) {
+double calcItem(double x, uint16_t n) {
   long double rez = pown(x, n) / fact(n);
   return rez;
 }
